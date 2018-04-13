@@ -1,5 +1,3 @@
-//DO NOT MODIFY THIS FILE
-
 var zenGardenData = [
   {
     name: 'rock'
