@@ -1,8 +1,7 @@
 {
-  "name": "react-pond",
+  "name": "HiR Style-a-thon",
   "version": "1.0.0",
-  "description": "Create a fish pond in React",
-  "author": "Hack Reactor <curriculum.team@hackreactor.com>",
+  "description": "Style the react components",
   "license": "UNLICENSED",
   "scripts": {
     "start": "babel src/ --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch & live-server"
