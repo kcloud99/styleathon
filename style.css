@@ -4,9 +4,33 @@ body{
   background: url(bg.jpg) no-repeat;
   background-size: cover;
 }
+@keyframes grow {
+  from {
+    transform: rotate(0deg);
+    width: 350px;
+    height: 350px;
+  }
+  to {
+    transform: rotate(360deg);
+    width: 550px;
+    height: 550px;
+  }
+}
+@keyframes shrink {
+  from {
+    transform: rotate(0deg);
+    width: 350px;
+    height: 350px;
+  }
+  to {
+    transform: rotate(-360deg);
+    width: 200px;
+    height: 200px;
+  }
+}
 .box{
   width: 450px;
-  background: rgba(0, 0, 0, 0.4);
+  background: blue;
   padding: 40px;
   text-align: center;
   margin: auto;
@@ -50,3 +74,63 @@ ul{
 .box li a:hover{
   color: #b9b9b9;
 }
+
+.pic-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.first-row {
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px auto;
+}
+.second-row {
+  flex-direction: row;
+  margin: 10px auto;
+}
+.pics {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+.pics:nth-child(even) {
+  border: 5px solid blue;
+}
+.pics:nth-child(even):hover {
+  border: 0px;
+  animation: grow 3s 0s 2;
+}
+.pics:nth-child(odd) {
+  border: 5px solid green;
+}
+.pics:nth-child(odd):hover {
+  border: 0px;
+  animation: shrink 3s 0s 2;
+}
+
+
+/* @keyframes grow {
+  from {
+    transform: rotate(0deg);
+    width: 350px;
+    height: 350px;
+  }
+  to {
+    transform: rotate(360deg);
+    width: 550px;
+    height: 550px;
+  }
+} */
+/* @keyframes shrink {
+  from {
+    transform: rotate(0deg);
+    width: 350px;
+    height: 350px;
+  }
+  to {
+    transform: rotate(360deg);
+    width: 200px;
+    height: 200px;
+  }
+} */
